@@ -1,0 +1,19 @@
+PROJ=proj3
+
+$(PROJ).pdf: $(PROJ).ps
+	ps2pdf $(PROJ).ps
+
+$(PROJ).ps: $(PROJ).dvi
+	dvips -sPAPERSIZE=a4 $(PROJ).dvi
+
+$(PROJ).dvi: $(PROJ).tex
+	latex $(PROJ).tex
+	latex $(PROJ).tex
+
+xlazor02.tar.gz:
+	tar -czvf xlazor02-fit.tar.gz $(PROJ).tex Makefile etiopan.eps oniisan.eps oniisan2.eps
+
+clean:
+	rm -f $(PROJ).aux $(PROJ).dvi $(PROJ).log $(PROJ).ps $(PROJ).out
+
+pack: xlazor02.tar.gz

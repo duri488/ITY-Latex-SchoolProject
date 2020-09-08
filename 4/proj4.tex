@@ -1,0 +1,56 @@
+\documentclass[a4paper, 11pt, hidelinks]{article}
+\usepackage[slovak]{babel}
+\usepackage[left=2cm, top=3cm, text={17cm, 24cm}]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[unicode]{hyperref}
+\usepackage{times}
+\usepackage{url}
+
+
+\begin{document}
+
+\urlstyle{same}
+\renewcommand{\refname}{Literatúra}
+
+\begin{titlepage}
+
+\begin{center}
+
+\Huge\textsc{Vysoké učení technické v Brně} \\
+\huge\textsc{Fakulta informačních technologií} \\	
+
+\vspace{\stretch{0.382}}
+
+\LARGE Typografie a publikování\,--\,4. projekt \\
+\Huge Bibliografia
+
+\vspace{\stretch{0.618}}
+\end{center}
+
+{\LARGE \today \hfill
+Juraj Lazorík (xlazor02)}
+
+\end{titlepage}
+
+\section{Rozpoznávanie reči}
+Rozpoznávanie reči je automatický prevod ľudskej reči do textu. Existujú rôzne metódy na analýzu a prevod hlasu. Všetky tieto metódy sú výpočtovo veľmi náročné. Využívajú sa tu napríklad neurónové siete \cite{rekurentNeuronSiet}. Z toho dôvodu sa väčšinou pri tvorbe aplikácií využívajúcich túto službu používajú API rôznych IT gigantov. Ako prebieha spracovanie reči je popísané v \cite{LouizouPhiliposC2007}.
+
+\subsection{História}
+História rozpoznávania reči začala v roku 1952, kedy sa trojici vedcov podarilo rozpoznať jednotlivé číslice jedným hovorcom \cite{wikiRozpozReci}. Od tohto začiatku sme sa dostali až do doby, kedy môžeme využívať túto službu každý deň. Najbežnejším využitím dnes sú hlasoví asistenti, ako napríklad Cortana, o ktorej sa viete dozvedieť viac v~\cite{wikiCortana}.
+
+\subsection{Rozpoznávanie reči a jazyky}
+Pri rozpoznávaní reči je mnoho problémov. Jedným z nich sú aj jazyky a rôzne dialekty. Podrobnejšie informácie, ako tieto problémy riešime, je popísané v \cite{rozpozRecVybraneJazyky}.
+
+\subsection{Rozpoznávanie reči okolo nás}
+Rozpoznávanie reči už nájdeme všade v našom okolí \cite{techHlasKom}. Či už je to mobil alebo počítač. No v dnešnej dobe nezaostávajú ani ostatné spotrebiče, o čom sa môžete viac dočítať v \cite{voiceRecInHome}.
+
+\subsection{Projekty s rozpoznávaním reči}
+Keby sme nemali dostupných toľko dát, nič ako hlasoví asistenti by neexistovalo ešte 10 až 15 rokov \cite{talkingToMachines}. Rozpoznávanie sa dá využívať nie len na zjednodušenie práce, ale aj napríklad na rozpoznávanie druhov vtákov v prírode, o čom sa píše v \cite{birdRecog}.
+
+V prípade, že by ste chceli využiť rozpoznávanie vo vašom projekte, môžete využiť jednu z dostupných API. Samozrejme, môžete si naimplementovať vlastný softvér podľa vašich predstáv. Tomuto sa venuje \cite{howToDoSpeech}.
+
+\newpage
+\bibliographystyle{czechiso}
+\bibliography{proj4}
+
+\end{document}
